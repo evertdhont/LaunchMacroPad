@@ -1,0 +1,23 @@
+﻿<Window x:Class="LaunchMacroPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LaunchMacroPad"
+        mc:Ignorable="d"
+        Title="LaunchPad S Macro keys" Height="400" Width="600">
+    <DockPanel LastChildFill="True">
+        <!--<Label Background="Black" Foreground="White" DockPanel.Dock="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontSize="20px" FontWeight="Black">LaunchPad Macros, the right way!</Label>-->
+        <StackPanel DockPanel.Dock="Left" Width="200px" Background="#757575">
+            <Label>Please select the Launchpad S Input</Label>
+            <ComboBox Margin="5 0 5 5" Name="LaunchPadInputs"></ComboBox>
+            <Label>Please select the Launchpad S Output</Label>
+            <ComboBox Margin="5 0 5 5" Name="LaunchPadOutputs"></ComboBox>
+            <Button Margin="5" Name="ConfirmButton" Click="ConfirmButtonPressed">Connect</Button>
+        </StackPanel>
+        <!--<StackPanel DockPanel.Dock="Right" MinWidth="200px" Background="#757575"></StackPanel>-->
+        <Grid Name="MacroGrid" Background="#757575">
+            <!--#d6dbd7 buttoncolor-->
+        </Grid>
+    </DockPanel>
+</Window>
